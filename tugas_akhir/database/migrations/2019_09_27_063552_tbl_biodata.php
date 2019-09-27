@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TblKaryawan extends Migration
+class TblBiodata extends Migration
 {
     /**
      * Run the migrations.
@@ -16,9 +16,9 @@ class TblKaryawan extends Migration
       Schema::create('tbl_karyawan', function (Blueprint $table){
         $table->Increments('id');
         $table->string('nama');
-        $table->string('jabatan');
-        $table->string('umur');
+        $table->string('no_hp');
         $table->string('alamat');
+        $table->string('hobi');
         $table->string('foto');
       });
     }

@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/pushData', 'Karyawan@store');
-Route::get('/getData', 'Karyawan@getData');
-Route::get('/hapusData/{id}', 'Karyawan@hapus');
-Route::get('/getDetail/{id}', 'Karyawan@getDetail');
-Route::post('/updateData', 'Karyawan@update');
+Route::post('/pushData', 'Biodata@store');
+Route::get('/getData', 'Biodata@getData');
+Route::get('/hapusData/{id}', 'Biodata@hapus');
+Route::get('/getDetail/{id}', 'Biodata@getDetail');
+Route::post('/updateData', 'Biodata@update');
